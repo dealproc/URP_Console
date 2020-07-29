@@ -1,0 +1,71 @@
+{
+ "creation": "2020-07-29 00:06:43.183103",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "urp_application",
+  "permission_id",
+  "permission_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "permission_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Permission Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "permission_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "urp_application",
+   "fieldtype": "Link",
+   "label": "Application",
+   "options": "URP Application",
+   "reqd": 1
+  }
+ ],
+ "modified": "2020-07-29 01:39:56.116660",
+ "modified_by": "Administrator",
+ "module": "Urp Console",
+ "name": "URP Permission",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "URP Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "permission_name",
+ "track_changes": 1
+}

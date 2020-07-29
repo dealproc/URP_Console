@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include urp_console *.css
+recursive-include urp_console *.csv
+recursive-include urp_console *.html
+recursive-include urp_console *.ico
+recursive-include urp_console *.js
+recursive-include urp_console *.json
+recursive-include urp_console *.md
+recursive-include urp_console *.png
+recursive-include urp_console *.py
+recursive-include urp_console *.svg
+recursive-include urp_console *.txt
+recursive-exclude urp_console *.pyc

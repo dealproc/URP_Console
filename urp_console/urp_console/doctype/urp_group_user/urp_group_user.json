@@ -1,0 +1,29 @@
+{
+ "creation": "2020-07-29 02:29:56.598962",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "group_user"
+ ],
+ "fields": [
+  {
+   "fieldname": "group_user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-07-29 02:29:56.598962",
+ "modified_by": "Administrator",
+ "module": "Urp Console",
+ "name": "URP Group User",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

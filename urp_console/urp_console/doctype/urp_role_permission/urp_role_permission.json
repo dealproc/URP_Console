@@ -1,0 +1,29 @@
+{
+ "creation": "2020-07-29 00:52:31.261589",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "permission"
+ ],
+ "fields": [
+  {
+   "fieldname": "permission",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Permission",
+   "options": "URP Permission",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-07-29 01:36:20.262944",
+ "modified_by": "Administrator",
+ "module": "Urp Console",
+ "name": "URP Role Permission",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

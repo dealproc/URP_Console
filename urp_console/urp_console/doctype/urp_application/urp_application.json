@@ -1,0 +1,63 @@
+{
+ "allow_import": 1,
+ "creation": "2020-07-29 00:14:57.101017",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "application_name",
+  "application"
+ ],
+ "fields": [
+  {
+   "fieldname": "application",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "OAuth Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "application_name",
+   "fieldtype": "Data",
+   "label": "Application Name"
+  }
+ ],
+ "modified": "2020-07-29 02:27:30.031056",
+ "modified_by": "Administrator",
+ "module": "Urp Console",
+ "name": "URP Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "URP Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "application_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "application_name",
+ "track_changes": 1
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +128,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+=======
+.DS_Store
+*.pyc
+*.egg-info
+*.swp
+tags
+urp_console/docs/current
+>>>>>>> Initial layout(s) for user management console.
