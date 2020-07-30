@@ -28,7 +28,9 @@
    "fieldname": "licenses_ref",
    "fieldtype": "Table",
    "label": "Customer Licenses",
-   "options": "URP Customer License"
+   "options": "URP Customer License",
+   "read_only": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "section_break_2",
@@ -39,7 +41,7 @@
    "fieldtype": "Section Break"
   }
  ],
- "modified": "2020-07-29 17:58:22.639166",
+ "modified": "2020-07-30 08:41:59.992039",
  "modified_by": "Administrator",
  "module": "Urp Console",
  "name": "URP Customer",
