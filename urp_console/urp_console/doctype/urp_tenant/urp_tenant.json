@@ -7,7 +7,8 @@
   "tenant_key",
   "application_ref",
   "tenant_name",
-  "is_locked"
+  "is_locked",
+  "is_closed"
  ],
  "fields": [
   {
@@ -29,16 +30,24 @@
    "default": "0",
    "fieldname": "is_locked",
    "fieldtype": "Check",
-   "label": "Lock tenant access"
+   "label": "Lock tenant access",
+   "options": "false"
   },
   {
    "fieldname": "tenant_key",
    "fieldtype": "Read Only",
    "label": "Key"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_closed",
+   "fieldtype": "Check",
+   "label": "Close tenant",
+   "options": "false"
   }
  ],
  "istable": 1,
- "modified": "2020-07-29 19:08:39.171819",
+ "modified": "2020-07-30 15:42:36.795916",
  "modified_by": "Administrator",
  "module": "Urp Console",
  "name": "URP Tenant",
