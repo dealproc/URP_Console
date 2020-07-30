@@ -11,14 +11,17 @@ import string
 class URPCustomer(Document):
 
 	def validate(self):
-		#frappe.throw(str(len(self.licenses_ref)))
+		pass
+
+	def before_save(self):
+		# load list of tenants from db for this customer.
 
 		for tenant in self.tenants_ref:
 			if not tenant.tenant_key:
+				# Create a new key.
 				tenant.tenant_key = get_random_alphanumeric_string(10)
-
-	def on_update(self):
-		# licenses_ref
+				# TODO: publish new tenant_created event into EventStore
+			
 		pass
 
 
