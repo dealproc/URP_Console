@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Copyright (c) 2020, asdf and contributors
 # For license information, please see license.txt
 
@@ -14,19 +13,33 @@ class URPCustomer(Document):
 		pass
 
 	def before_save(self):
-		# load list of tenants from db for this customer.
-
 		for tenant in self.tenants_ref:
 			if not tenant.tenant_key:
 				# Create a new key.
 				tenant.tenant_key = get_random_alphanumeric_string(10)
 				# TODO: publish new tenant_created event into EventStore
-			
+		pass
+
+	def on_change(self):
+		for tenant in self.tenants_ref:
+			if tenant.is_locked:
+				# publish tenant_locked
+				pass
+			else:
+				# publish tenant_unlocked
+				pass
+
+			if tenant.is_closed:
+				# publish tenant_closed
+				pass
+			else:
+				# publish tenant_reopened
+				pass
+
 		pass
 
 
-	# def get_random_alphanumeric_string(length):
-
+# def get_random_alphanumeric_string(length):
 def get_random_alphanumeric_string(length):
 	letters_and_digits = string.ascii_letters + string.digits
 	result_str = ''.join((random.choice(letters_and_digits) for i in range(length)))
