@@ -1,0 +1,36 @@
+{
+ "creation": "2020-07-29 16:52:35.774915",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "application_ref",
+  "number_of_licenses"
+ ],
+ "fields": [
+  {
+   "fieldname": "application_ref",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Application",
+   "options": "URP Application"
+  },
+  {
+   "fieldname": "number_of_licenses",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Licenses"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-07-29 18:19:33.971076",
+ "modified_by": "Administrator",
+ "module": "Urp Console",
+ "name": "URP Customer License",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

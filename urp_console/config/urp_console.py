@@ -30,6 +30,12 @@ def get_data():
               "name": "URP Application",
               "label": _("Applications"),
               "description": _("Hosted application services to be subscribed to."),
+            },
+            {
+              "type": "doctype",
+              "name": "URP Customer",
+              "label": _("Customers"),
+              "description": _("Customers."),
             }
           ]
       }

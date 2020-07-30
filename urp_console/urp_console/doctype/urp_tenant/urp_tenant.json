@@ -1,0 +1,50 @@
+{
+ "creation": "2020-07-29 16:42:38.277313",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tenant_key",
+  "application_ref",
+  "tenant_name",
+  "is_locked"
+ ],
+ "fields": [
+  {
+   "fieldname": "application_ref",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Application",
+   "options": "URP Application",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tenant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tenant Name",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_locked",
+   "fieldtype": "Check",
+   "label": "Lock tenant access"
+  },
+  {
+   "fieldname": "tenant_key",
+   "fieldtype": "Read Only",
+   "label": "Key"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-07-29 19:08:39.171819",
+ "modified_by": "Administrator",
+ "module": "Urp Console",
+ "name": "URP Tenant",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

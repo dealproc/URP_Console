@@ -1,11 +1,11 @@
 {
  "allow_import": 1,
+ "allow_rename": 1,
  "creation": "2020-07-29 00:14:57.101017",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "application_name",
   "application"
  ],
  "fields": [
@@ -17,14 +17,9 @@
    "label": "Client",
    "options": "OAuth Client",
    "reqd": 1
-  },
-  {
-   "fieldname": "application_name",
-   "fieldtype": "Data",
-   "label": "Application Name"
   }
  ],
- "modified": "2020-07-29 02:27:30.031056",
+ "modified": "2020-07-29 18:17:19.586381",
  "modified_by": "Administrator",
  "module": "Urp Console",
  "name": "URP Application",
@@ -55,9 +50,7 @@
    "write": 1
   }
  ],
- "search_fields": "application_name",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "application_name",
  "track_changes": 1
 }
