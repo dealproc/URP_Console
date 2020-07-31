@@ -79,13 +79,14 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Customer": {
+        "after_insert": "urp_console.urp_console.doctype.urp_customer.urp_customer.new_customer",
+		"after_rename": "urp_console.urp_console.doctype.urp_customer.urp_customer.after_rename_user",
+		# "on_cancel": "method",
+		# "on_trash": "method"
+	}
+}
 
 # Scheduled Tasks
 # ---------------

@@ -44,3 +44,13 @@ def get_random_alphanumeric_string(length):
 	letters_and_digits = string.ascii_letters + string.digits
 	result_str = ''.join((random.choice(letters_and_digits) for i in range(length)))
 	return result_str
+
+def after_rename_user(old, new, merge):
+	frappe.rename_doc("URP Customer", old, new, merge)
+	pass
+
+def new_customer(customer, method):
+	urpcustomer = frappe.get_doc(doctype = "URP Customer", name = customer.name, title = customer.customer_name)
+	urpcustomer.insert()
+	frappe.db.commit()
+	pass
