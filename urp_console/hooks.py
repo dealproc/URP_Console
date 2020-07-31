@@ -82,7 +82,7 @@ app_license = "MIT"
 doc_events = {
 	"Customer": {
         "after_insert": "urp_console.urp_console.doctype.urp_customer.urp_customer.new_customer",
-		"after_rename": "urp_console.urp_console.doctype.urp_customer.urp_customer.after_rename_user",
+		"after_rename": "urp_console.urp_console.doctype.urp_customer.urp_customer.rename_customer",
 		# "on_cancel": "method",
 		# "on_trash": "method"
 	}

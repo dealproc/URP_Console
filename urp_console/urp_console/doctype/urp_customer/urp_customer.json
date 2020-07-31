@@ -1,7 +1,11 @@
 {
- "autoname": "field:customer_name",
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2020-07-29 16:27:30.437211",
  "doctype": "DocType",
+ "document_type": "Setup",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -9,7 +13,8 @@
   "section_break_2",
   "licenses_ref",
   "section_break_4",
-  "tenants_ref"
+  "tenants_ref",
+  "naming_series"
  ],
  "fields": [
   {
@@ -39,9 +44,18 @@
    "fieldtype": "Data",
    "label": "Customer Name",
    "unique": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "options": "URP-CUST-.YYYY.",
+   "set_only_once": 1
   }
  ],
- "modified": "2020-07-30 22:55:59.675628",
+ "icon": "fa fa-user",
+ "modified": "2020-07-31 00:31:37.412596",
  "modified_by": "Administrator",
  "module": "Urp Console",
  "name": "URP Customer",
@@ -73,8 +87,9 @@
    "write": 1
   }
  ],
+ "search_fields": "customer_name",
  "sort_field": "modified",
- "sort_order": "DESC",
+ "sort_order": "ASC",
  "title_field": "customer_name",
  "track_changes": 1
 }
