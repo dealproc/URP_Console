@@ -50,7 +50,7 @@ def after_rename_user(old, new, merge):
 	pass
 
 def new_customer(customer, method):
-	urpcustomer = frappe.get_doc(doctype = "URP Customer", name = customer.name, title = customer.customer_name)
+	urpcustomer = frappe.get_doc(doctype = "URP Customer", customer_name = customer.name, name = customer.name)
 	urpcustomer.insert()
 	frappe.db.commit()
 	pass
