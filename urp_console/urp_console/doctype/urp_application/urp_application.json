@@ -6,11 +6,19 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "application"
+  "subscription_plan_ref",
+  "application_ref"
  ],
  "fields": [
   {
-   "fieldname": "application",
+   "fieldname": "subscription_plan_ref",
+   "fieldtype": "Link",
+   "label": "Subscription Plan",
+   "options": "Subscription Plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "application_ref",
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
@@ -19,7 +27,7 @@
    "reqd": 1
   }
  ],
- "modified": "2020-07-29 18:17:19.586381",
+ "modified": "2020-07-31 00:47:32.641788",
  "modified_by": "Administrator",
  "module": "Urp Console",
  "name": "URP Application",

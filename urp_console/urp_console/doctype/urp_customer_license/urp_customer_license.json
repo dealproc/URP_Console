@@ -3,29 +3,29 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "application_ref",
+  "subscription_plan_ref",
   "number_of_licenses"
  ],
  "fields": [
-  {
-   "fieldname": "application_ref",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Application",
-   "options": "URP Application",
-   "read_only": 1
-  },
   {
    "fieldname": "number_of_licenses",
    "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Number of Licenses",
-   "read_only": 1
+   "reqd": 1
+  },
+  {
+   "fieldname": "subscription_plan_ref",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subscription Plan",
+   "options": "Subscription Plan",
+   "reqd": 1
   }
  ],
  "hide_toolbar": 1,
  "istable": 1,
- "modified": "2020-07-30 11:30:44.767849",
+ "modified": "2020-07-31 08:59:23.902509",
  "modified_by": "Administrator",
  "module": "Urp Console",
  "name": "URP Customer License",
